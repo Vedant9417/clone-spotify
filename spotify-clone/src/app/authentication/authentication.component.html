@@ -1,0 +1,20 @@
+
+<div class="content_wrapper flex-center">
+  <div class="login_container flex-column background-base">
+    <div class="img_container flex-center">
+      <img src="/assets/images/icons8-spotify.svg" alt="">
+    </div>
+    <h1 class="bold text-3xl fw-700 neutral-white-1 mb-30">Log in to Spotify</h1>
+    <form class="w-6/12" action="">
+      <div class="mb-6  w-full">
+        <label for="" class="mb-4 font-semibold text-white">Email or username</label>
+        <input type="text" name="username" [(ngModel)]="user.userName" id="" class="bg-transparent border border-white text-white text-sm rounded-md  focus:border-4 focus:outline-none  focus:border-white block w-full p-2.5 ">
+      </div>
+      <div class="mb-24 w-full">
+        <label for="" class="mb-4 font-semibold text-white">Password</label>
+        <input type="text" name="password" [(ngModel)]="user.password" class="bg-transparent border border-white text-white text-sm rounded-md  focus:border-4 focus:outline-none  focus:border-white block w-full p-2.5 ">
+      </div>
+      <button type="submit" (click)="onSubmit()" class="bg-green-500 p-2 border-none text-black w-full font-bold rounded-full hover:bg-green-700 hover:border-none hover:text-black">Log In</button>
+    </form>
+  </div>
+</div>

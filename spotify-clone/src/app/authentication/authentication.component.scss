@@ -1,0 +1,27 @@
+.content_wrapper{
+  background: linear-gradient(rgba(255, 255, 255, 0.1) -100%, rgb(0, 0, 0) 100%);
+  justify-content: center;
+  .login_container{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding:  32px 0px;
+  }
+
+  .input_container{
+    width: 30%;
+    gap: 4px;
+    input{
+      padding: 12px;
+      border: 0px;
+      border-radius: 4px;
+      border: 1px solid #fff;
+
+      ::placeholder{
+        font-size: 14px;
+      }
+    }
+  }
+
+}

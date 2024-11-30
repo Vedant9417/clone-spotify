@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/Custom-style/variables.scss';
+@import './assets/Custom-style/fonts.scss';
+@import './assets/Custom-style/buttons.scss';
+@import './assets/Custom-style/grids.scss';
+@import './assets/Custom-style/utility.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito-Regular'
+}
+
+.content_wrapper{
+  width: 100%;
+  height: 100vh;
+}
+

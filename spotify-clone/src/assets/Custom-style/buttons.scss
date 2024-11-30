@@ -1,0 +1,123 @@
+
+button,
+.button,
+.btn {
+  cursor: pointer;
+  background-color: #ff8308;
+  padding: 8px 16px;
+  color: #fff;
+  border: 0 none;
+  text-align: center;
+  border-radius: rem-calc(2);
+  border: 2px solid transparent;
+  font-weight: bold;
+
+  &:hover {
+    background-color: transparent;
+    border: 2px solid #ff8308;
+    color: #ff8308;
+  }
+
+  &:focus,
+  &:active,
+  &:visited,
+  &:focus-within {
+    outline: 0 none
+  }
+
+  &.btn-active {
+    color: #ff8308;
+    border: 2px solid #ff8308;;
+    background: none;
+
+    &:hover {
+      color: #fff;
+      background: #ff8308;
+    }
+
+  }
+}
+
+.btn-primary {
+  padding: 0px 16px;
+  line-height: 36px;
+  background: transparent;
+  color: #ff8308;
+  font-weight: 700;
+  cursor: pointer;
+  border: 2px solid #ff8308;
+  border-radius: 2px;
+  box-sizing: content-box;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    border-radius: 15%;
+    border: 2px solid $highlight-orange;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+  }
+
+  input:checked ~ .checkmark {
+    background-color: $highlight-orange;
+  }
+
+  .checkmark:after {
+    display: block;
+    left: 8px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+/* Error box */
+.error_box {
+  position: absolute;
+  padding: 16px 16px;
+  width: fit-content;
+  border-radius: 2px;
+  background: $neutral-black;
+  color: $neutral-white;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  top: 5%;
+  right: 5%;
+}
+

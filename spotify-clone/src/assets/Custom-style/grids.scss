@@ -1,0 +1,51 @@
+/* Font size */
+@for $i from 1 through 18 {
+  .fs-#{$i} {
+    font-size: #{$i}px !important;
+  }
+}
+
+/* Font weight */
+@for $i from 400 through 700  {
+  .fw-#{$i} {
+    font-weight: #{$i} !important;
+  }
+}
+
+/* Padding classes */
+@for $i from 4 through 100 {
+  .pl-#{$i} {
+    padding-left: #{$i}px !important; 
+  }
+  .pr-#{$i} {
+    padding-right: #{$i}px !important;
+  }
+  .pb-#{$i} {
+    padding-bottom: #{$i}px !important;
+  }
+  .pt-#{$i} {
+    padding-top: #{$i}px !important;
+  }
+  .mt-#{$i} {
+    margin-top: #{$i}px !important;
+  }
+  .ml-#{$i} {
+    margin-left: #{$i}px !important;
+  }
+  .mr-#{$i} {
+    margin-right: #{$i}px !important;
+  }
+  .mb-#{$i} {
+    margin-bottom: #{$i}px !important;
+  }
+}
+
+/* Divider */
+@for $i from 10 through 80  {
+  .divider-#{$i} {
+    height: #{$i}px !important;
+  }
+}
+
+
+

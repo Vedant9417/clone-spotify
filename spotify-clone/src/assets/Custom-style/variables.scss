@@ -1,0 +1,37 @@
+$body-color: #333;
+$min-width: 1024px;
+$neutral-blue: #70b8c5;
+$highlight-orange: #ff8308;
+$danger-red: #f72c25;
+$neutral-black: #2a2d34;
+$neutral-grey: #757780;
+$neutral-white: #fff;
+
+.neutral-black-1 {
+  color: $neutral-black !important;
+}
+
+.neutral-grey-1 {
+  color: $neutral-grey;
+}
+
+.neutral-white-1 {
+  color: $neutral-white;
+}
+
+.danger-red {
+  color: $danger-red;
+  font-weight: 700;
+}
+
+.bg-neutral-blue {
+  background-color: $neutral-blue;
+}
+
+.tc-neutral-blue {
+  color: $neutral-blue;
+}
+
+.background-base{
+  background: #121212;
+}

@@ -1,0 +1,62 @@
+.upper-case {
+  text-transform: uppercase;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  @extend .flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  @extend .flex;
+  align-items: center;
+}
+
+.align-top {
+  align-self: flex-start;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.bold {
+  font-family: Nunito-Bold;
+}
+
+.semi-bold {
+  font-weight: 500;
+  font-family: Nunito-SemiBold;
+}
+
+.fl-upper::first-letter {
+  text-transform: uppercase;
+}
+
+.highlight-title {
+  font-family: Nunito-Regular;
+  color: $highlight-orange;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Text align */
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+
+/* Cursor */
+.cursor-pointer {
+  cursor: pointer;
+}
